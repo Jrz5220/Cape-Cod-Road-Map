@@ -1,4 +1,3 @@
-package graphProject;
 
 import java.util.Deque;
 import java.util.LinkedList;
@@ -8,7 +7,7 @@ public class Driver {
 
 	public static void main(String[] args) {
 		
-		DirectedGraph<String> capeCod = new DirectedGraph<>();
+	    DirectedGraph<String> capeCod = new DirectedGraph<>();
 		
 	    String provincetown = "Provincetown";
 	    String hyannis = "Hyannis";
@@ -21,7 +20,7 @@ public class Driver {
 		
 	    // add towns
 	    capeCod.addVertex(provincetown);
-		capeCod.addVertex(truro);
+	    capeCod.addVertex(truro);
 	    capeCod.addVertex(orleans);
 	    capeCod.addVertex(chatham);
 	    capeCod.addVertex(hyannis);
@@ -31,23 +30,23 @@ public class Driver {
 	    
 	    // connect towns
 	    capeCod.addEdge(provincetown, truro, 10);
-		capeCod.addEdge(truro, provincetown, 10);
-		capeCod.addEdge(truro, orleans, 17);
-		capeCod.addEdge(orleans, truro, 17);
-		capeCod.addEdge(orleans, chatham, 9);
-		capeCod.addEdge(orleans, barnstable, 19);
-		capeCod.addEdge(chatham, orleans, 9);
-		capeCod.addEdge(chatham, hyannis, 19);
-		capeCod.addEdge(hyannis, chatham, 19);
-		capeCod.addEdge(hyannis, barnstable, 4);
-		capeCod.addEdge(hyannis, falmouth, 20);
-		capeCod.addEdge(barnstable, orleans, 19);
-		capeCod.addEdge(barnstable, hyannis, 4);
-		capeCod.addEdge(barnstable, sandwich, 12);
-		capeCod.addEdge(sandwich, barnstable, 12);
-		capeCod.addEdge(falmouth, hyannis, 20);
+	    capeCod.addEdge(truro, provincetown, 10);
+	    capeCod.addEdge(truro, orleans, 17);
+	    capeCod.addEdge(orleans, truro, 17);
+	    capeCod.addEdge(orleans, chatham, 9);
+	    capeCod.addEdge(orleans, barnstable, 19);
+	    capeCod.addEdge(chatham, orleans, 9);
+	    capeCod.addEdge(chatham, hyannis, 19);
+	    capeCod.addEdge(hyannis, chatham, 19);
+	    capeCod.addEdge(hyannis, barnstable, 4);
+	    capeCod.addEdge(hyannis, falmouth, 20);
+	    capeCod.addEdge(barnstable, orleans, 19);
+	    capeCod.addEdge(barnstable, hyannis, 4);
+	    capeCod.addEdge(barnstable, sandwich, 12);
+	    capeCod.addEdge(sandwich, barnstable, 12);
+	    capeCod.addEdge(falmouth, hyannis, 20);
 		
-		// Example 1: Graph operations for Provincetown
+	    // Example 1: Graph operations for Provincetown
 		
 		Queue<String> provincetownBFT = capeCod.getBreadthFirstTraversal(provincetown);
 		Queue<String> provincetownDFT = capeCod.getDepthFirstTraversal(provincetown);
