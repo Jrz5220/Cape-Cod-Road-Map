@@ -1,2 +1,2 @@
 # Cape-Cod-Road-Map
-A Java graph implementation
+Implement a Java graph ADT to display a map of Cape Cod.
